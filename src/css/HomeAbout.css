@@ -1,0 +1,80 @@
+html
+{
+  font-size: 62.5%;
+}
+.home-about-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #f8f8f8;
+  height: 100%;
+}
+.home-about-section .about-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 40vh;
+  max-width: 100rem;
+  gap: 5rem;
+  transform: translateY(-10rem);
+}
+.home-about-section .about-card-container .about-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30rem;
+  width: 30rem;
+  gap: 2rem;
+  background-color: var(--color4);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+.home-about-section .about-card-container .about-card:hover {
+  background: url(../images/saket2.jpg);
+  background-size: cover;
+  background-position: top;
+  color: var(--color4);
+}
+.home-about-section .about-card-container .about-card i {
+  font-size: 6rem;
+  color: var(--color2);
+}
+.home-about-section .about-card-container .about-card h2 {
+  font-size: 3rem;
+}
+.home-about-section .about-card-container .about-card p {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0 2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+@media (max-width:780px) {
+  
+  .home-about-section .about-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 5rem;
+    transform: translateY(-10rem);
+  }
+  .home-about-section .about-card-container .about-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 30rem;
+    gap: 2rem;
+    background-color: var(--color4);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+  }
+}

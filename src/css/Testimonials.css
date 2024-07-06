@@ -1,0 +1,106 @@
+.testimonial-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 10rem 0;
+}
+.testimonial-container .testimonial-heading h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+  height: 4rem;
+  width: 20rem;
+  padding-top: 0.6rem;
+  color: var(--color4);
+  background: url(../images/scratch_background.png);
+  background-size: cover;
+  background-position: center;
+}
+.testimonial-container .testimonial-review {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 60vh;
+  max-width: 120rem;
+}
+.testimonial-container .testimonial-review .testimonial-review-left {
+  height: 50rem;
+  width: 90rem;
+  background: url(../images/testimonialcardimg.jpg);
+  background-position: top;
+  background-size: cover;
+  border-top-right-radius: 50%;
+}
+.testimonial-container .testimonial-review .testimonial-review-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: black;
+  padding-left: 5rem;
+  color: white;
+  height: 34vh;
+}
+.testimonial-container
+  .testimonial-review
+  .testimonial-review-right
+  .imgdiv
+  img {
+  height: 6rem;
+}
+.testimonial-container .testimonial-review .testimonial-review-right p {
+  font-size: 1.5rem;
+}
+.testimonial-container .testimonial-review .testimonial-review-right h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+.testimonial-container .testimonails-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 30vh;
+  width: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.556);
+}
+.testimonial-container .testimonails-company img {
+  height: 8rem;
+  transition: filter 0.3s ease-in-out;
+}
+.testimonial-container .testimonails-company img:hover {
+  filter: brightness(50%);
+}
+
+@media (max-width: 780px) {
+  .testimonial-container {
+    flex-direction: column;
+    height: 100%;
+    gap:8rem;
+    margin: 20rem 0;
+  }
+  .testimonial-container .testimonial-review {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .testimonial-container .testimonial-review .testimonial-review-left {
+    height: 50rem;
+    width: 100%;
+    border-top-right-radius: 50%;
+  }
+  .testimonial-container .testimonial-review .testimonial-review-right {
+    padding-left: 5rem;
+    color: white;
+    height: 34vh;
+  }
+  .testimonial-container .testimonails-company {
+    flex-wrap: wrap;
+    gap: 10rem;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.556);
+  }
+}

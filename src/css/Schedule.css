@@ -1,0 +1,191 @@
+/* above head container */
+.above-container {
+  max-width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top;
+  transform: translateY(-10%);
+}
+.banner-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: rgba(0, 0, 0, 0.5 */
+  color: white;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .above-container {
+    height: 150px;
+  }
+
+  .image-text {
+    bottom: 10px;
+    padding: 5px;
+  }
+}
+
+/* Day tab buttons */
+.day-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.day-button {
+  background-color: white;
+  border: none;
+  padding: 10px 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 40px;
+  font-weight: bold;
+  border: 0.01px rgb(211, 208, 208) solid;
+}
+
+.day-button.active {
+  background-color: red;
+  color: white;
+}
+/* Selected day tab button */
+.day-tab.active {
+  background-color: red;
+  color: white;
+}
+
+/* Join Now button */
+.join-button {
+  padding: 5px 10px;
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 50px;
+  font-weight: bold;
+
+  background-color: rgb(77, 76, 76);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Schedule table */
+.schedule-table {
+  width: 100%;
+  /* margin-left: 30px;
+    margin-right: 30px; */
+}
+.table-row-container {
+  display: flex;
+  /* flex-direction: row; */
+  gap: 2.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Schedule table rows */
+.schedule-row {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  background-color: rgb(234, 234, 234);
+}
+
+/* Schedule table cells */
+.schedule-cell {
+  width: 25%;
+  height: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* Schedule cell heading */
+.schedule-cell-heading {
+  padding-top: 2rem;
+  font-size: medium;
+  font-weight: 1000px;
+  color: gray;
+}
+.schedule-cell-heading-h2 {
+  transform: translateY(-15px);
+  font-size: 1.7rem;
+}
+/* Schedule cell content */
+.schedule-cell-content {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Larger font size for workout, trainer, and time */
+.schedule-cell-content.highlight {
+  font-size: 14px;
+}
+
+/* responsive code */
+
+@media only screen and (max-width: 600px) {
+  .schedule {
+    padding: 0 10px;
+  }
+
+  .table-row-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schedule-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schedule-cell {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .schedule-table {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .schedule-cell {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .schedule-table {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .schedule-cell {
+    width: 25%;
+  }
+}

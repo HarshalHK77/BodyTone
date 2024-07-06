@@ -1,0 +1,147 @@
+.blog-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 10rem;
+}
+.blog-container .blog-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 20vh;
+  max-width: 70rem;
+}
+.blog-container .blog-heading p:first-child {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+  height: 4rem;
+  width: 20rem;
+  padding-top: 0.6rem;
+  color: var(--color4);
+  background: url(../images/scratch_background.png);
+  background-size: cover;
+  background-position: center;
+}
+.blog-container .blog-heading h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.blog-container .blog-heading p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: grey;
+  width: 60rem;
+}
+.blog-container .blog-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  gap: 8rem;
+}
+.blog-container .blog-card-container .blog-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 32rem;
+  width: 30rem;
+  padding-top: 5rem;
+  padding-left: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.blog-container .blog-card-container .blog-card h3 {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+}
+.blog-container .blog-card-container .blog-card h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.blog-container .blog-card-container .blog-card p {
+  font-size: 1.4rem;
+  color: grey;
+  padding-top: 2rem;
+}
+.blog-container .blog-card-container .blog-card button {
+  padding: 1rem 2.5rem;
+  background-color: var(--color2);
+  color: var(--color4);
+  text-transform: uppercase;
+  border-radius: 1.2rem;
+  outline: 0;
+  border: 0;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 3.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.blog-container .blog-card-container .blog-card button:hover {
+  transform: scale(1.1);
+}
+.blog-container .contact-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background: url(../images/blogcontact.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-left: 10rem;
+  height: 35vh;
+  width: 100%;
+}
+.blog-container .contact-img h1 {
+  color: var(--color4);
+  font-size: 3.5rem;
+}
+.blog-container .contact-img p {
+  color: var(--color4);
+  font-size: 2.5rem;
+}
+.blog-container .contact-img span {
+  color: var(--color2);
+  font-weight: 900;
+}
+.blog-container .contact-img button {
+  padding: 1rem 2.5rem;
+  background-color: var(--color2);
+  color: var(--color4);
+  text-transform: uppercase;
+  border-radius: 1.2rem;
+  outline: 0;
+  border: 0;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 3.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.blog-container .contact-img button:hover {
+  transform: scale(1.1);
+}
+@media (max-width:780px) {
+  .blog-container
+  {
+    gap:10rem;
+  }
+  .blog-container .blog-card-container {
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 8rem;
+  }
+}
+@media (max-width:480px) {
+  .blog-container .blog-heading p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: grey;
+    width: 40rem;
+  }
+}
